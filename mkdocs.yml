@@ -1,0 +1,30 @@
+site_name: Molecular projects
+site_url: https://lmelwyn.github.com//
+site_author: L. M. Jensen
+
+repo_url: https://github.com/lmelwyn/molecular
+
+theme:
+  name: material
+  icon:
+    logo: material/atom
+  palette:
+    primary: orange
+    accent: orange
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  features:
+    - header.autohide
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition         # Adds boxes for Notes, Warnings, etc.
+  - codehilite         # Syntax coloring for code blocks
+  - def_list           # Adds syntax for definition lists
+  - sane_lists         # Enables list items with multiple paragraphs
+  - toc:               # Builds a table of contents
+      permalink:
+
+copyright: 2023 L. M. Jensen DTU Research Computing
