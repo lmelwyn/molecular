@@ -100,9 +100,9 @@ Clone the repository,
 
 and install all the dependencies using the ansible playbook _install.yml_,
 
-          $ ansible ...
+          $ ansible-playbook --ask-become-pass install.yml
 
-Alternatively, install manually the following distro and python packages,
+Alternatively, do a manual installation of the distro and python packages,
 
   1. install vagrant and libvirt distro packages
 
@@ -120,7 +120,7 @@ Alternatively, install manually the following distro and python packages,
      or
 
           $ pip install --user ansible ansible-core ansible-compat ansible-lint
-          $ pip install --user molecule molecule-plugins['vagrant'] python-vagrant
+          $ pip install --user molecule molecule-plugins['podman','vagrant'] python-vagrant
           $ pop install --user cookiecutter mkdocs mkdocs-material
 
   3. Fetch latest vagrant base VM images
