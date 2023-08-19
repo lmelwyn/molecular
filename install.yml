@@ -1,0 +1,23 @@
+---
+
+- name: Run | local playbook
+  hosts: localhost
+  connection: local
+  tasks:
+
+    - name: Install | distro packages
+      ansible.builtin.package:
+        name: "{{ packages }}"
+        state: present
+      become: true
+      vars:
+        packages:
+          - libvirt
+          - podman
+          - vagrant
+          - vagrant-libvirt
+
+    - name: Install | python requirements
+      ansible.builtin.pip:
+        requirements: "{{ playbook_dir }}/requirements.txt"
+...
