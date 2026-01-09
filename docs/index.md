@@ -181,7 +181,7 @@ of the molecule.
 
 ## Links
 
-  * [Ansible](https://ansible.readthedocs.io/en/latest/)
+  * [Ansible](https://docs.ansible.com/projects/ansible/latest/index.html)
       - [Roles](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html)
       - [Collections](https://docs.ansible.com/ansible/latest/collections_guide/index.html)
   * [Ansible Galaxy](https://galaxy.ansible.com/docs/)
